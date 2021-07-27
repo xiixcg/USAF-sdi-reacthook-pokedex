@@ -14,3 +14,32 @@ Use the following user stories to guide your development:
 5.As a user, when I am viewing an individual pokemon, I should be presented with a panel that defaults to showing me their abilities, so that I can see their abilities.
 
 6.As a user, I should be able to click an “environment” link/button from inside the individual pokemon page that changes the panel from abilities to information about that pokemon’s environment.
+
+
+//app comp {
+
+  =>button to nav home
+  =>button to nav to about
+
+  //home {
+
+    [X]//poke list comp (first 151) w/ pic {
+      [X]=>//click func on pokemon (nav to poke info)
+      filter by type dropdown
+    }
+
+    //poke info {
+      additional info
+      with pannel that defaults to show abilities{
+        =>click enviorment to change abilities pannel to enviorment pannel
+      }
+
+    }
+
+  }
+
+  //about {
+    info about pokedexd dev team
+    }
+
+}
