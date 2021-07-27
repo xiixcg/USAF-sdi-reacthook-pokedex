@@ -29,8 +29,8 @@ Use the following user stories to guide your development:
     }
 
     //poke info {
-      additional info
-    []  with pannel that defaults to show abilities{
+    [X]  additional info
+    [X]  with pannel that defaults to show abilities{
         =>click enviorment to change abilities pannel to enviorment pannel
       }
 
