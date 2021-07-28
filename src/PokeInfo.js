@@ -19,7 +19,7 @@ let PokeInfo = ({ url }) => {
         <p>Name: {selectedPokemon.name}</p>
         <ul>
           {
-            selectedPokemon.abilities.map(item => <li>{item.ability.name}</li>)
+            selectedPokemon.abilities.map((item, index) => <li key={index}>{item.ability.name}</li>)
           }
         </ul>
 
