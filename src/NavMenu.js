@@ -1,11 +1,11 @@
-let NavMenu = ({setPage}) => {
+import { Link } from 'react-router-dom';
+import './NavMenu.css';
+let NavMenu = () => {
   return (
     <nav>
-      <ol>
-        <li onClick={() => setPage('home')}>Home</li>
-        <li onClick={() => setPage('about')}>About</li>
-      </ol>
-    </nav>
+      <Link to="/pokemon" class="nav-link">Home</Link>
+      <Link to="/about" class="nav-link">About</Link>
+    </nav >
   )
 }
 

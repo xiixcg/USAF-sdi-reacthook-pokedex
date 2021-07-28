@@ -1,16 +1,19 @@
 import './App.css';
 import NavMenu from "./NavMenu.js";
 import About from "./About.js";
-import Home from "./Home.js";
-import {useState} from 'react';
+import Pokedex from "./Pokedex.js";
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 
 
 function App() {
-  let [page, setPage] = useState('home');
   return (
     <div>
-      <NavMenu setPage={setPage}/>
-      { page === 'about' ? (<About />) : (<Home />)}
+      <Router>
+        <NavMenu />
+        <Route exact path="/" render={() => (<Redirect to="/pokemon" />)} />
+        <Route path="/pokemon" component={Pokedex} />
+        <Route path="/about" component={About} />
+      </Router>
     </div>
   );
 }

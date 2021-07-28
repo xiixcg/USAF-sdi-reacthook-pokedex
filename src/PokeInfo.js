@@ -5,11 +5,11 @@ let PokeInfo = ({ url }) => {
   const [selectedPokemon, setSelectedPokemon] = useState({})
 
   useEffect(() => {
-    fetch(url)
+    fetch(`https://pokeapi.co/api/v2${url}`)
       .then(response => response.json())
       .then(pokemon => setSelectedPokemon(pokemon))
       .catch(err => console.error(err))
-  }, [])
+  }, [url])
 
   if (Object.keys(selectedPokemon).length === 0) {
     return <div></div>

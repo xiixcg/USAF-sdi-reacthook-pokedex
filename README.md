@@ -41,5 +41,14 @@ Use the following user stories to guide your development:
   //about {
     info about pokedexd dev team
     }
-
 }
+
+
+Routing Specific Stories
+Use React Router to continue work on your SDI Pokedex, using the following stories to guide your development:
+
+1. As a user, I should be able to click an “environment” link/button from inside the individual pokemon page that changes the panel from abilities to information about that pokemon’s environment.
+
+2. As a user, when I navigate to the relative path “/pokemon/bulbasaur/environment”, I should land on a page that navigates to the individual pokemon page that specifically shows the environment in the information panel so that I can bookmark environment information for each pokemon.
+
+3. As a user, I want to be able to leverage my browser's history capability to go forward and backward from the various routes in the SDI Pokedex.
