@@ -1,1 +1,8 @@
+.main-div {
+  height: 100vh;
+}
 
+.scroll-area-sm {
+  height: 78vh;
+  overflow-x: hidden
+}

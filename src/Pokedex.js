@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react'
-import { Route, Link, useRouteMatch} from 'react-router-dom';
-import PokeInfo from './PokeInfo.js';
+import { Container, Row } from 'react-bootstrap';
 import PokedexEntry from './PokedexEntry';
 
-let Pokedex = ({ match, history }) => {
-  let {path, url} = useRouteMatch();
+let Pokedex = () => {
   let [pokeMasterList, setPokeMasterList] = useState([])
 
   useEffect(() => {
@@ -15,11 +13,13 @@ let Pokedex = ({ match, history }) => {
   }, [])
 
   return (
-    <div>
-      {
-        pokeMasterList.map((pokemon, index) => <PokedexEntry pokemon={pokemon} index={index} />)
-      }
-    </div>
+    <Container>
+      <Row>
+        {
+          pokeMasterList.map((pokemon, index) => <PokedexEntry key={index} pokemon={pokemon} index={index} />)
+        }
+      </Row>
+    </Container>
   )
 }
 

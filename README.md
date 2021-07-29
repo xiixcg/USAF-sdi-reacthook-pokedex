@@ -16,33 +16,6 @@ Use the following user stories to guide your development:
 6.As a user, I should be able to click an “environment” link/button from inside the individual pokemon page that changes the panel from abilities to information about that pokemon’s environment.
 
 
-//app comp {
-
-  =>button to nav home
-  =>button to nav to about
-
-  //home {
-
-    [X]//poke list comp (first 151) w/ pic {
-      [X]=>//click func on pokemon (nav to poke info)
-      filter by type dropdown
-    }
-
-    //poke info {
-    [X]  additional info
-    [X]  with pannel that defaults to show abilities{
-        =>click enviorment to change abilities pannel to enviorment pannel
-      }
-
-    }
-
-  }
-
-  //about {
-    info about pokedexd dev team
-    }
-}
-
 
 Routing Specific Stories
 Use React Router to continue work on your SDI Pokedex, using the following stories to guide your development:

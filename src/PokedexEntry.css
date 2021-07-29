@@ -1,0 +1,14 @@
+.pokemon-card {
+  min-height: 30vh;
+  min-width: 25wh;
+}
+.pokemon-card.p-3 {
+  border-color: whitesmoke;
+  border-width: 5px;
+  border-radius: 10%;
+}
+
+a.pokemon-link {
+  text-align: center;
+  text-decoration: none;
+}
